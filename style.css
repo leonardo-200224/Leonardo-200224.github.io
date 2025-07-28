@@ -1,0 +1,23 @@
+body{
+    background: black;
+
+}
+.titulo{
+    
+
+}
+
+h1{
+    color: aliceblue;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 6px  8px 10px cornflowerblue;
+}
+.cuerpo{
+    color: aliceblue;
+    border: solid 3px white;
+    border-radius: 10px;
+    margin: auto;
+    width: 90%;
+    padding: 20px;
+}
