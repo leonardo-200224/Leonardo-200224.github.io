@@ -1,10 +1,18 @@
+/*esta es la formas de usar funtes d internet de forma local, la feunte se descargo en  -----FONT GOOGLE---*/
+@font-face{
+    font-family: 'PlayfairDisplay';
+    src: url(Fonts/static/PlayfairDisplay-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+/*CSS*/
+
 body{
-    background: black;
-    
-    
+    background: black;  
 }
 .fondo{
-    background-image: url(imagen/fondo.jpg);
+    background-image: url('imagen/fondo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -15,14 +23,17 @@ body{
     height: 100%;
     z-index: -1;
     filter: blur(3px);
+    
 
 }
 
 h1{
+    font-family: '';
     color: #666;
     font-size: 50px;
     text-align: center;
     text-shadow: 1px 1px 1px white;
+    
 }
 h2{
     margin: 10px;
@@ -31,6 +42,7 @@ h2{
     text-shadow: 2px 2px 3px #000000;
 }
 .cuerpo,.cuerpo2{
+    background: linear-gradient(to top, transparent 30%, #000);
     color: aliceblue;
     border: solid 3px white;
     border-radius: 10px;
@@ -40,6 +52,7 @@ h2{
     margin: 0 auto;
     width: 89%;
     text-shadow: 2px 2px 3px #000000;
+    background-color: #233a;
     
 
 }
@@ -50,6 +63,7 @@ h2{
     margin: 0 auto;
     margin-top: 12px;
     text-shadow: 2px 2px 3px #000000;
+    background-color: #233a;
 }
 
 .intro{
@@ -61,11 +75,12 @@ h2{
     width: 400px;
     height: 400px;
     border: 1px solid #ddd;
+    
 
 }
 
 .buscador{
-    width: 600px;
+    width: 50%;
     box-sizing: border-box;
     padding: 13px 8px;
     border: none;
@@ -92,12 +107,14 @@ img{
 .formatocuerpo{
     display: flex;
     justify-content: space-between;
+    
 }
 
 p{
-    text-align: center;
-    width: 80%%;
+    text-align: justify;
+    width: 80%;
     text-shadow: 2px 2px 3px #000000;
+    line-height: 1.2;
 }
 
 .lista{
@@ -113,7 +130,7 @@ input{
     border-radius: 10px;
     padding: 10px;
     border: none ;
-    width: 90%;
+    width: 60%;
     text-transform: uppercase;
 }
 
@@ -137,15 +154,25 @@ footer{
     display: block;
     margin: 0 auto;
     margin-top: 12px;
+    background-color: #233a;
 
 }
 
 button{
     color: aliceblue;
-    background-color: transparent;
+    background-color: #000a;
     box-shadow: 2px 2px 3px #000000;
     text-shadow: 2px 2px 3px #000000;
     font-size: 20px;
-    margin: 30px;
-    margin-left: 120px;
+    margin: 10%;
+  
+}
+.bot{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+}
+from{
+    width: 7%;
+
 }
