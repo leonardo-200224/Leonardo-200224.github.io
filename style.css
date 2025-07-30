@@ -48,7 +48,7 @@ body{
     z-index: 1000;
     transition:transform 0.3s ease;
     animation: animacion 2s ease-in-out infinite;
-
+    word-wrap: break-word;
 }
 
 .comentario:hover{
@@ -57,13 +57,17 @@ body{
 }
 
 h1{
-    font-family: '';
+    word-wrap:break-word;
     color: #666;
-    font-size: 5vw;
+    font-size: 350%;
     text-align: center;
     text-shadow: 1px 1px 1px white;
     transition: 0.8s ease;
 
+}
+.titulo{
+    word-wrap: break-word;
+    min-width: 250px;
 }
 
 
@@ -78,7 +82,7 @@ h1:hover{
 h2{
     margin: 10px;
     text-align: center;
-    font-size: 4vw;
+    font-size: 3vw;
     text-shadow: 2px 2px 3px #000000;
 }
 .cuerpo,.cuerpo2{
@@ -90,10 +94,16 @@ h2{
     padding: 20px;
     display: block;
     margin: 0 auto;
-    width: 89%;
+    width: 64svw;
     text-shadow: 2px 2px 3px #000000;
     background-color: #233a;
     transition:transform 0.5s ease;
+    margin-bottom: 20px;
+    min-width: 250px;
+    word-wrap: break-word;
+    padding-bottom:  1px;
+    padding-left: 50px;
+    padding-right: 50px;
 
 }
 
@@ -102,6 +112,9 @@ h2{
     display: block;
     margin: 0 auto;
     margin-top: 12px;
+    margin-bottom: 20px;
+    width: 64vw;
+    min-width: 250px;
     text-shadow: 2px 2px 3px #000000;
     background-color: #233a;
 
@@ -152,7 +165,7 @@ h2{
 
 
 img{
-    width: 30%;
+    width: 36%;
     height: 20%;
     border-radius: 12px;
     margin: 12px;
@@ -176,9 +189,11 @@ img:hover{
 p{
     text-align: justify;
     width: 80%;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-shadow: 2px 2px 3px #000000;
     line-height: 1.2;
+    margin-left: 12%;
+    word-wrap: break-word;
 }
 
 .lista{
@@ -209,7 +224,7 @@ button,.proyectos{
 footer{
 
     border-radius: 4px;
-    width: 93%;
+    width: 100%;
     box-sizing: border-box;
     color: #666;
     padding: 10px;
@@ -219,9 +234,10 @@ footer{
     text-shadow: 2px 2px 3px #000000;
     text-transform: capitalize;
     display: block;
-    margin: 0 auto;
+    margin: 0;
     margin-top: 12px;
     background-color: #233a;
+    min-width: 250px;
 
 }
 
@@ -232,6 +248,7 @@ button,.proyectos{
     text-shadow: 2px 2px 3px #000000;
     font-size: 20px;
     margin: 10%;
+    word-wrap: break-word;
 }
 button,.proyectos{
     display: block;
@@ -239,6 +256,7 @@ button,.proyectos{
     margin-bottom: 2%;
     width: 50vw;
     transition:transform 0.3s ease;
+    word-wrap: break-word;
 
 }
 
@@ -249,6 +267,7 @@ button:hover{
 .proyectos{
     margin: 1%;
     transition: 0.8s ease;
+    word-wrap: break-word;
 
 }
 
@@ -270,6 +289,8 @@ a:hover{
     font-size: 110%;
 }
 .gm{
-    width: 80vw;
+    font-size: 150%;
+    word-wrap: break-word;
+    width: 50vw;
     background-color: #002a;
 }
