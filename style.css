@@ -5,6 +5,14 @@
     font-weight: bold;
     font-style: bold;
 }
+/*creamos animacion, nombre animacion, */
+@keyframes animacion {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+
 
 /*CSS*/
 
@@ -39,6 +47,7 @@ body{
     max-width: 250px;
     z-index: 1000;
     transition:transform 0.3s ease;
+    animation: animacion 2s ease-in-out infinite;
 
 }
 
@@ -53,8 +62,19 @@ h1{
     font-size: 5vw;
     text-align: center;
     text-shadow: 1px 1px 1px white;
+    transition: 0.8s ease;
+
+}
+
+
+h1:hover{
+    font-size: 7vw;
     
 }
+
+
+
+
 h2{
     margin: 10px;
     text-align: center;
@@ -73,7 +93,7 @@ h2{
     width: 89%;
     text-shadow: 2px 2px 3px #000000;
     background-color: #233a;
-    transition:transform 0.3s ease;
+    transition:transform 0.5s ease;
 
 }
 
@@ -138,7 +158,7 @@ img{
     margin: 12px;
     margin-top: 1%;
     box-shadow: 1px 2px 3px #131212;
-    transition: transfom 0.9s ease;
+    transition:  0.9s ease;
 
 }
 
@@ -228,13 +248,13 @@ button:hover{
 }
 .proyectos{
     margin: 1%;
-    transition:transform 0.8s ease;
+    transition: 0.8s ease;
 
 }
 
 
 .proyectos:hover{
-    transform: scale(1.12);
+    transform: scale(1.2) rotate(5deg);
     background: #040a;
     box-shadow: 2px 1px 9px rgba(68, 67, 67, 0.667);
     text-align: center;
@@ -244,8 +264,10 @@ a{
     text-decoration: none;
     color: white;
 }
+
 a:hover{
     color: #095828;
+    font-size: 110%;
 }
 .gm{
     width: 80vw;
