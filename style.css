@@ -139,17 +139,13 @@ h2,h3{
 
 .buscador{
     width: 50vw;
-    box-sizing: border-box;
     padding: 1% 8px;
     border: none;
     border: 1px solid #666;
     box-shadow: 0px 0px 15px #0003;
     background-color: white;
     border-radius: 10px;
-    color: #ddd;
-    text-transform: uppercase;
-    display:block;
-    margin: auto;
+    display: flex;
     
 }
 
@@ -201,7 +197,6 @@ input{
     padding: 1% 10px;
     border: none ;
     width: 80%;
-    text-transform: uppercase;
     font-size: 90%;
 }
 
@@ -363,4 +358,38 @@ a:hover{
 
 .lista{
     padding-bottom: 12px;
+}
+
+
+.busca{
+    width: 6vw;
+    background-color:#ddd;
+    border:none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    padding: 12px;
+    margin-right: 12px;
+}
+
+.busca:hover{
+    background-color: transparent;
+    filter:drop-shadow(0 0 4px #06087e)
+}
+.buscador{
+    background-color:#ddd;
+    padding: 0;
+    width: 40vw;
+
+}
+
+.posi{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bu{
+    width: 30vw;
+    padding: 0;
+    margin: 6px;
 }

@@ -4,10 +4,7 @@
     <meta charset="UTF-8"><!-- para que el navegador entienda bien los textos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- adapta la pagina a todos los dispositivos -->
     <meta name="description" content="Esta página web es mi portafolio de proyectos como ingeniero de sistemas">
-
     <meta name="author" content="Leonardo Ayala Pérez">
-
-
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagen/images.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -38,19 +35,18 @@
             <!-- Boton de busqueda -->
             <div class="buscador">
                 <form>
-                    <label  for="bq"> <i class="fa-solid fa-magnifying-glass"></i>
-                    </label>
-                    <input list="secciones"  placeholder="Busca mas de mi en mi portafolio" id="bq " onchange="location.href=this.value;">
-                     <datalist id="secciones">
-                        <option value="#Un poco sobre mi"></option>
-                        <option value="#Habilidades"></option>
-                        <option value="#Proyectos"></option>
-                        <option value="#Contacto"></option>
-                     </datalist>
+                
+                        <div class="posi">
+                        <button onclick="buscar()" class="busca"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="text" class="bu" id="buscador"  placeholder="Busca mas de mi en mi portafolio">
+                        </div>
+                    
+                  
+
                 </form>
             </div>
             <div>
-                <h2 id="Un poco sobre mi">Un poco sobre mi</h2>
+                <h2 id="sobremi">Un poco sobre mi</h2>
             </div>
 
             <!-- Foto de perfil -->
@@ -66,7 +62,7 @@
         </div>
 
         <div class="cuerpo2">
-            <h2 id="Habilidades">Habilidades</h2>
+            <h2 id="habilidades">Habilidades</h2>
 
             <div class="lista">
                 <div class="arriba">
@@ -101,7 +97,7 @@
         </div>
 
         <div class="cuerpo2">
-            <h2 id="Proyectos">Proyectos</h2>
+            <h2 id="proyectos">Proyectos</h2>
 
             <div class="proy">
 
@@ -129,7 +125,7 @@
         </div>
         
         <div class="cuerpo2">
-            <h2 id="Contacto">Contacto</h2>
+            <h2 id="contacto">Contacto</h2>
 
                 <div class="bot">
                     <label>
@@ -172,6 +168,8 @@
 <footer> FORMULARIO DE PROYECTOS <br> LEONARDO AYALA <br>
     &copy;2025 todos los derechos de autor reservado. Leonardo Ivan Ayala Perez
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 
