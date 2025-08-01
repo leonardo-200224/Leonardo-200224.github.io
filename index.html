@@ -40,12 +40,17 @@
                 <form>
                     <label  for="bq"> <i class="fa-solid fa-magnifying-glass"></i>
                     </label>
-                    <input type="text"
-                        placeholder="Busca mas de mi en mi portafolio" id="bq">
+                    <input list="secciones"  placeholder="Busca mas de mi en mi portafolio" id="bq " onchange="location.href=this.value;">
+                     <datalist id="secciones">
+                        <option value="#Un poco sobre mi"></option>
+                        <option value="#Habilidades"></option>
+                        <option value="#Proyectos"></option>
+                        <option value="#Contacto"></option>
+                     </datalist>
                 </form>
             </div>
             <div>
-                <h2>Un poco sobre mi</h2>
+                <h2 id="Un poco sobre mi">Un poco sobre mi</h2>
             </div>
 
             <!-- Foto de perfil -->
@@ -61,7 +66,7 @@
         </div>
 
         <div class="cuerpo2">
-            <h2>Habilidades</h2>
+            <h2 id="Habilidades">Habilidades</h2>
 
             <div class="lista">
                 <div class="arriba">
@@ -96,7 +101,7 @@
         </div>
 
         <div class="cuerpo2">
-            <h2>Proyectos</h2>
+            <h2 id="Proyectos">Proyectos</h2>
 
             <div class="proy">
 
@@ -124,7 +129,7 @@
         </div>
         
         <div class="cuerpo2">
-            <h2>Contact</h2>
+            <h2 id="Contacto">Contacto</h2>
 
                 <div class="bot">
                     <label>
@@ -142,7 +147,7 @@
 
                 <label>
                     <a href="imagen/hoja de vida/Leonardo-Ivan-Ayala-Perez-FlowCV-Resume-20250713.pdf" download="">
-                        <button>Download Curriculum</button>
+                        <button >Download Curriculum</button>
                     </a>
                     
                 </label>
