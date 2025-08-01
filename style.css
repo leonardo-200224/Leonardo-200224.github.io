@@ -146,9 +146,12 @@ h2,h3{
     background-color: white;
     border-radius: 10px;
     display: flex;
+    min-width: 200px;
     
 }
-
+.busca{
+    min-width: 3px;
+}
 .fot{
     width: 36%;
     height: 20%;
@@ -229,7 +232,7 @@ footer{
     height: 40;
     padding-top:1%;
     word-wrap: break-word;
-    font-size: 322w;
+     font-size: clamp(1rem, 2vw, 2rem);
 
 }
 
@@ -261,7 +264,7 @@ button:hover{
     word-wrap: break-word;
     margin: 0 auto;
     text-align: center;
-    width: 27vw;
+    width: 40vw;
     margin-bottom: 50px; 
     margin-top: 35px;
     word-wrap: break-word;
@@ -272,6 +275,7 @@ button:hover{
     padding:0;
     border: 2px solid rgb(66, 67, 116);
     transition:transform 0.3s ease;
+    min-width: 170px;
 
 
 }
@@ -315,13 +319,16 @@ a:hover{
     font-size: 110%;
 }
 .gm{
-    font-size: 150%;
+    font-size: 120%;
     word-wrap: break-word;
-    width: 50vw;
+    width: 70vw;
+    min-width: 200px;
     background-color: #002a;
+    margin-left: -3vw;
 }
 .verCodigo{
     width: 15vw;
+    min-width: 105px;
     font-size: 100%;
     padding: 10px;
     margin-top: 10px;
@@ -389,7 +396,7 @@ a:hover{
 }
 
 .bu{
-    width: 30vw;
+    width: 32vw;
     padding: 0;
     margin: 6px;
 }
