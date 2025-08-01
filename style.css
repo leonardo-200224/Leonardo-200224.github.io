@@ -65,20 +65,12 @@ h1{
     font-size: 350%;
     text-align: center;
     text-shadow: 1px 1px 1px white;
-    transition: 0.8s ease;
 
 }
 .titulo{
     word-wrap: break-word;
     min-width: 250px;
 }
-
-
-h1:hover{
-    font-size: 7vw;
-    
-}
-
 
 
 
@@ -266,7 +258,7 @@ button{
 }
 
 button:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
     background: #040a;
 }
 .proyectos{
@@ -338,4 +330,37 @@ a:hover{
     font-size: 100%;
     padding: 10px;
     margin-top: 10px;
+}
+.hab,.hab1,.hab2,.hab3,.hab4{
+    width: 30vw;
+    border-radius: 1px;
+
+}
+
+.hab1:hover{
+    background-color: rgba(55, 55, 58, 0.667);
+    color: #df8208;
+}
+.hab:hover{
+    background-color: rgba(55, 55, 58, 0.667);
+    color: #ffeb39;
+}
+
+.hab2:hover{
+    background-color: rgba(55, 55, 58, 0.667);
+    color: #0129ac;
+}
+
+.hab3:hover{
+    background-color: rgba(55, 55, 58, 0.667);
+    color: #ac1b01;
+}
+
+.hab4:hover{
+    background-color: rgba(55, 55, 58, 0.667);
+    color: #006319;
+}
+
+.lista{
+    padding-bottom: 12px;
 }
