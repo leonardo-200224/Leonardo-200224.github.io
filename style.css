@@ -17,7 +17,10 @@
 /*CSS*/
 
 body{
-    background: black;  
+    background: black; 
+    padding: -23%; 
+    border: 0;
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=), auto;
 }
 .fondo{
     background-image: url('imagen/fondo.jpg');
@@ -79,10 +82,10 @@ h1:hover{
 
 
 
-h2{
+h2,h3{
     margin: 10px;
-    text-align: center;
-    font-size: 3vw;
+    font-size: 3.3vw;
+    padding: 6px;
     text-shadow: 2px 2px 3px #000000;
 }
 .cuerpo,.cuerpo2{
@@ -157,17 +160,11 @@ h2{
     margin: auto;
     
 }
-.proy{
-    display: flex;
-    justify-content: space-between;
-}
 
-
-
-img{
+.fot{
     width: 36%;
     height: 20%;
-    border-radius: 12px;
+    border-radius: 2px;
     margin: 12px;
     margin-top: 1%;
     box-shadow: 1px 2px 3px #131212;
@@ -175,7 +172,7 @@ img{
 
 }
 
-img:hover{
+.fot:hover{
     transform: scale(1.05);
     box-shadow: 1px 1px 20px #021d07;
 }
@@ -216,7 +213,7 @@ input{
     font-size: 90%;
 }
 
-button,.proyectos{
+button{
     padding: 13px 8px;
     border-radius: 10px;
 }
@@ -226,10 +223,10 @@ footer{
     border-radius: 4px;
     width: 100%;
     box-sizing: border-box;
-    color: #666;
+    color: #ffffff;
     padding: 10px;
     text-align: center;
-    border: 3px solid #ddd;
+    border:1px solid #ddd;
     margin: 10px;
     text-shadow: 2px 2px 3px #000000;
     text-transform: capitalize;
@@ -238,10 +235,18 @@ footer{
     margin-top: 12px;
     background-color: #233a;
     min-width: 250px;
+    margin-bottom: -18px;
+    margin-left: -15px;
+    margin-right: 10px;
+    width: 100vw;
+    height: 40;
+    padding-top:1%;
+    word-wrap: break-word;
+    font-size: 322w;
 
 }
 
-button,.proyectos{
+button{
     color: aliceblue;
     background-color: #000a;
     box-shadow: 2px 2px 3px #000000;
@@ -250,7 +255,7 @@ button,.proyectos{
     margin: 10%;
     word-wrap: break-word;
 }
-button,.proyectos{
+button{
     display: block;
     margin: 0 auto;
     margin-bottom: 2%;
@@ -265,19 +270,53 @@ button:hover{
     background: #040a;
 }
 .proyectos{
-    margin: 1%;
-    transition: 0.8s ease;
+    display: block;
     word-wrap: break-word;
+    margin: 0 auto;
+    text-align: center;
+    width: 27vw;
+    margin-bottom: 50px; 
+    margin-top: 35px;
+    word-wrap: break-word;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #ffffff;
+    background-color: rgba(0, 0, 0, 0.667);
+    padding: 10px;
+    padding:0;
+    border: 2px solid rgb(66, 67, 116);
+    transition:transform 0.3s ease;
+
 
 }
 
+.imgf{
+    background-color: #112a;
+    margin-left: 14px;
+    border-radius: 2px;
+    margin-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+}
+.imgp{
+    border-radius: 2px;
+    box-shadow: 1px 1px  #000000;
+    width: 20vw;
+    height: 12vw;
+    
+}
+.letras{
+    text-align: center;
+}
+p{
+    text-shadow: 1px 1px #000000;
+    letter-spacing: 1px;
+}
 
 .proyectos:hover{
-    transform: scale(1.2) rotate(5deg);
-    background: #040a;
-    box-shadow: 2px 1px 9px rgba(68, 67, 67, 0.667);
-    text-align: center;
-    font-size: 2vw;
+    transform: scale(1.1);
+    box-shadow: 2px 1px 5px rgba(141, 136, 211, 0.667);
+
 }
 a{
     text-decoration: none;
