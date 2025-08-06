@@ -221,6 +221,8 @@ a {
     margin: 20px;
     margin-bottom: 0px;
     margin-top: 80px;
+    margin-bottom: -58px;
+
     
 }
 
@@ -229,6 +231,7 @@ a {
     background-color: #ddd;
     margin: 20px;
     border-radius: 5px;
+    
 }
 
 h1 {
