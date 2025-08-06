@@ -1,178 +1,118 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8"><!-- para que el navegador entienda bien los textos -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- adapta la pagina a todos los dispositivos -->
-    <meta name="description" content="Esta página web es mi portafolio de proyectos como ingeniero de sistemas">
-    <meta name="author" content="Leonardo Ayala Pérez">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagen/icono.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js" integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Portafolio de Proyectos</title>
-
-</head>
-<body>
-    <!-- Imagen de fondo -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PORTAFOLIO</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"
+      integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
     <div class="fondo"></div>
-
-       <!-- Titulo de la pagina --> 
-        <div class="titulo">
-            <h1> LEONARDO AYALA PERÉZ </h1>
+            <div class="comentario">
+                Hello! welcome.
+            </div>
+    <nav>
+      <div class="mobile">
+        <div class="header">
+          <div class="logo"><i class="fa-solid fa-user"></i></div>
+          <div class="more">
+            <button id="bMore" class="bot"><i class="fa-solid fa-bars"></i></button>
+          </div>
         </div>
 
-         <div class="comentario">
-               Hello! welcome. <br>
-               <a href="http://wa.me/573022621780"> <i class="fa-brands fa-whatsapp"></i>3022621780</a>
-              
-            </div>
+        <div id="links" class="links">
+          <a class="gm" onclick="copiarCorreo()"><i class="fas fa-envelope"></i>Correo</a>
+          <a href="http://wa.me/573022621780"> <i class="fa-brands fa-whatsapp"></i>whatsapp</a>
+          <a href="https://github.com/leonardo-200224"><i class="fa-solid fa-code"></i>GitHub</a>
+          <a href="https://www.linkedin.com/public-profile/settings" target="_blank"><i class="fa-solid fa-briefcase"></i>LinkedIn</a>
+          <a href="imagen/hoja de vida/Leonardo-Ivan-Ayala-Perez-FlowCV-Resume-20250713.pdf" download=""><i class="fa-solid fa-book"></i>Curriculum</a>
+        </div>
+      </div>
 
-        <!-- cuerpo de la pagina 1 -->
-        <div class="cuerpo">
+      <div class="desktop">
+        <div class="logo"><i class="fa-solid fa-user"></i></div>
+        <div class="primary">
+          <a class="gm" onclick="copiarCorreo()"><i class="fas fa-envelope"></i>Correo</a>
+          <a href="http://wa.me/573022621780"> <i class="fa-brands fa-whatsapp"></i>whatsapp</a>
+        </div>
 
-           
+        <div class="secondary full">
+          <a href="https://github.com/leonardo-200224"><i class="fa-solid fa-code"></i>GitHub</a>
+          <a href="https://www.linkedin.com/public-profile/settings" target="_blank"><i class="fa-solid fa-briefcase"></i>LinkedIn</a>
+          <a href="imagen/hoja de vida/Leonardo-Ivan-Ayala-Perez-FlowCV-Resume-20250713.pdf" download=""><i class="fa-solid fa-book"></i>Curriculum</a>
+        </div>
 
-            <!-- Boton de busqueda -->
-            <div class="buscador">
-                <form>
-                
-                        <div class="posi">
-                        <button onclick="buscar()" class="busca"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <input type="text" class="bu" id="buscador"  placeholder="Busca mas de mi en mi portafolio">
-                        </div>
-                    
-                  
+        <div class="secondary mini">
+          <a href="#" class="more"><i class="fa-solid fa-bars"></i></a>
+          <div class="submenu">
+            <a href="https://github.com/leonardo-200224"><i class="fa-solid fa-code"></i>GitHub</a>
+            <a href="https://www.linkedin.com/public-profile/settings" target="_blank"><i class="fa-solid fa-briefcase"></i>LinkedIn</a>
+            <a href="imagen/hoja de vida/Leonardo-Ivan-Ayala-Perez-FlowCV-Resume-20250713.pdf" download=""><i class="fa-solid fa-book"></i>Curriculum</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-                </form>
-            </div>
-            
-            <div>
-                <h2 id="sobremi">Un poco sobre mi</h2>
-            </div>
+    <section class="home">
+        <div class="in-flex">
+          <h1> LEONARDO AYALA PERÉZ </h1>
 
-            <!-- Foto de perfil -->
-            <div class="formatocuerpo">
+          <h2 id="sobremi">Un poco sobre mi</h2>
 
                 <img class="fot" src="imagen/foto.jpg" alt="Foto de perfil" title="Leonardo Ayala"> 
-
-                <div>
                     <p>
                         Estudiante de Ingeniería de Sistemas, con alto sentido de responsabilidad, disposición para aprender y compromiso con el trabajo en equipo. Busco una práctica profesional que me permita crecer, aportar valor y fortalecer mis habilidades en un entorno real. Cuento con conocimientos en desarrollo web (HTML, CSS, JavaScript, MySQL), análisis de requisitos y manejo intermedio de Excel, actualmente en formación en herramientas como Power BI.
                     </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="cuerpo2">
-            <h2 id="habilidades">Habilidades</h2>
-
-            <div class="lista">
-                <div class="arriba">
-
-                <div>
-                    <button class="hab"><i class="fa-brands fa-python"></i>PYTHON</button>
-                </div>
-                <div>
-                    <button class="hab1"><i class="fa-solid fa-code"></i>HTML</button>
-                </div>
-                <div>
-                   <button class="hab2"><i class="fa-brands fa-css"></i>CSS</button> 
-                </div>
-
-                </div>
-            
-                <div class="abajo">
-
-                    <div>
-                        <button class="hab3"><i class="fa-brands fa-java"></i>JAVA</button>
-                    </div>
-                    <div>
-                        <button class="hab4"><i class="fa-solid fa-database"></i>MSQL</button>
-                    </div>
-
-                </div>
-            </div>
-            <div>
                 
-            </div>
-
+              
+           
+      
         </div>
-
-        <div class="cuerpo2">
-            <h2 id="proyectos">Proyectos</h2>
-
-            <div class="proy">
-
-                <div class="proyectos">
-                    
-                    
-                    <div class="letras">
+       
+        <div class="in-flex fr">
+        <div class="tr"> 
+          <h2 id="habilidades">Habilidades</h2>
+          
+                  <button class="b"><i class="fa-brands fa-python"></i>PYTHON</button>
+                  <button class="b"><i class="fa-solid fa-code"></i>HTML</button>
+                  <button class="b"><i class="fa-brands fa-css"></i>CSS</button> 
+                  <button class="b"><i class="fa-brands fa-java"></i>JAVA</button>
+                  <button class="b"><i class="fa-solid fa-database"></i>MSQL</button>
+        </div>
+        <div>
+            <!-- proyectos -->
+                <h2 id="proyectos">Proyectos</h2>
+             
                     <h3>Guía en Línea de Recursos para Estudiantes - USB</h3>
-                <div class="imgf">
-                    <img class="imgp" src="imagen/proyecto1.jpeg" alt="">
 
-                </div>        
-                
+                    <img class="imgp" src="imagen/proyecto1.jpeg" alt="">
                     <p>Aplicativo web educativo que facilita el acceso a tutoriales, herramientas y guías técnicas para estudiantes de Ingeniería de Sistemas de la Universidad Simón Bolívar. Diseñado con enfoque centrado en el usuario, mejora la experiencia práctica en entornos académicos.</p>
 
-                    </div>
-                    <label>
+                 
                         <a href="https://github.com/leonardo-200224/RecursosIngenieriaSistemas.github.io" target="_blank">
-                            <button class="verCodigo">Ver Codigo</button>
+                            <button class="verCodigo b">Ver Codigo</button>
                         </a>
-                    </label>
-            
-                </div>
-            </div>
+                    
+          
+                
         </div>
-        
-        <div class="cuerpo2">
-            <h2 id="contacto">Contacto</h2>
-
-                <div class="bot">
-                    <label>
-                    <a href="https://github.com/leonardo-200224" target="_blank">
-                        <button>GitHub</button>
-                    </a>
-                </label>
-
-                <label>
-                    <a href="https://www.linkedin.com/public-profile/settings" target="_blank">
-                        <button>LinkedIn</button>
-                    </a>
-                    
-                </label>
-
-                <label>
-                    <a href="imagen/hoja de vida/Leonardo-Ivan-Ayala-Perez-FlowCV-Resume-20250713.pdf" download="">
-                        <button >Download Curriculum</button>
-                    </a>
-                    
-                </label>
-                <div class="bot">
-                    <label>
-                        <button  class="gm" onclick="copiarCorreo()"> <i class="fas fa-envelope"></i>ayalaperezleonardo24@gmail.com</button>
-                    
-                </label>
-                </div>
 
                 
                 
 
                 </div>
+    </section>
 
-        </div>
-
-
-
-
-<!-- Pie de pagina -->
-<footer> FORMULARIO DE PROYECTOS <br> LEONARDO AYALA <br>
+    <footer> PORTAFOLIO DE PROYECTOS <br> LEONARDO AYALA <br>
     &copy;2025 todos los derechos de autor reservado. Leonardo Ivan Ayala Perez
-</footer>
+    </footer>
 
-<script src="script.js"></script>
-
-</body>
-
+    <script src="scrip.js"></script>
+  </body>
 </html>

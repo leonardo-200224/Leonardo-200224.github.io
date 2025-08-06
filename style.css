@@ -1,26 +1,8 @@
-/*esta es la formas de usar funtes d internet de forma local, la feunte se descargo en  -----FONT GOOGLE---*/
-@font-face{
-    font-family: 'PlayfairDisplay';
-    src: url(Fonts/static/PlayfairDisplay-Bold.ttf);
-    font-weight: bold;
-    font-style: bold;
-}
-/*creamos animacion, nombre animacion, */
-@keyframes animacion {
-    0%   { transform: translateY(0px); }
-    50%  { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-}
-
-
-
-/*CSS*/
-
-body{
-    background: black; 
-    padding: -23%; 
-    border: 0;
-    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=), auto;
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    
 }
 .fondo{
     background-image: url('imagen/fondo.jpg');
@@ -34,7 +16,323 @@ body{
     height: 100%;
     z-index: -1;
     filter: blur(3px);
+
     
+
+}
+
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: #ededed;
+}
+
+
+.collapsed {
+    display: none;
+    
+}
+
+
+
+nav {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    position: fixed;
+ 
+
+}
+
+nav .mobile {
+    display: none;
+
+}
+
+nav .mobile .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    
+}
+
+nav .mobile .header .more button {
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    cursor: pointer;
+    
+}
+
+nav .logo {
+    /* nunca va ahcer el ancho menor  al min */
+    min-width: 250px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+}
+
+nav a:hover {
+    color: black;
+    background-color: #00c3ff;
+}
+
+nav .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pad: 0 20px;
+    
+}
+
+nav .desktop .primary,
+nav .desktop .secondary {
+    display: flex;
+    
+}
+
+nav .desktop .secondary.mini {
+    display: none;
+    
+}
+
+/* menu contraido */
+@media screen and (max-width: 863px) {
+
+    nav .logo {
+        min-width: 100px;
+
+    }
+
+    nav .secondary.full {
+        display: none;
+    }
+
+    nav .secondary.mini {
+        display: block !important;
+    }
+
+    nav .secondary.mini .submenu {
+        background-color: black;
+        position: absolute;
+        display: none;
+        width: 200px;
+        right: 0;
+    }
+
+    nav .secondary.mini:hover .submenu {
+        display: block;
+    }
+
+    @media screen and (max-width:500px) {
+        nav .desktop {
+            display: none;
+        }
+
+        nav .mobile {
+            display: block;
+        }
+
+    }
+}
+
+/* cuerpo de la pagina  */
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-flex {
+    flex: 1;
+    min-width: 250px;
+    max-width: 500px;
+    max-height: 56rem;
+    padding-bottom: 610px;
+    margin-top: 62px;
+    border-radius: 5px;
+
+    
+
+}
+
+p {
+    width: 100%;
+    height: auto;
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.fr {
+    max-width: 750px;
+    border-radius: 5px;
+
+
+
+}
+
+.tr button {
+    color: #DDD;
+    font-weight: 700;
+    margin: 20px;
+    max-width: 46%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+
+
+}
+
+.verCodigo {
+    color: #DDD;
+    font-weight: 700;
+    border: 2px solid #cdcdcd;
+    background-color: #424141;
+    width: 50%;
+    box-shadow: 1px 1px 2px #000000;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 15px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.in-flex:first-child {
+    flex: 2;
+    padding: 25px;
+    background-color: #ddd;
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+    
+}
+
+.in-flex div {
+    padding: 25px;
+    background-color: #ddd;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    /* Se adapta al tamaño raíz del documento */
+
+}
+
+.fot {
+    margin-top: 30px;
+    max-width: 70%;
+    height: auto;
+    display: block;
+    box-shadow: 1px 1px 7px #cbcbcb;
+    border-radius: 4px;
+    transition: 0.9s ease;
+}
+
+.fot:hover {
+    font-weight: 700;
+    transform: scale(1.05);
+    box-shadow: 1px 1px 20px #021d07;
+
+}
+
+.imgp {
+    max-width: 40%;
+    height: auto;
+    display: block;
+}
+
+.b {
+    color: aliceblue;
+    background-color: #000a;
+    box-shadow: 2px 2px 3px #000000;
+    text-shadow: 2px 2px 3px #000000;
+    font-size: 20px;
+    margin: 10%;
+    word-wrap: break-word;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.b {
+    padding: 13px 8px;
+    border-radius: 10px;
+}
+
+.b {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    width: 50vw;
+    transition: transform 0.3s ease;
+    word-wrap: break-word;
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+button:hover {
+    font-weight: 700;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transform: scale(1.02);
+    background: #040a;
+}
+
+/* pie de pagina */
+footer {
+    background-color: #252525;
+    color: white;
+    text-align: center;
+    margin-top: 6rem;
+    padding: 20px;
+
+
+}
+
+.tr button {
+    border: 7px solid #000000;
+    border-bottom: 6px solid #fff;
+    border-right: 6px solid #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in, 0.3s ease-in;
+
+}
+
+.tr button:hover {
+    font-weight: 700;
+    max-width: 300px;
+    border-bottom: none;
+    border-right: none;
+    transform: scale(1.0);
+    color: #000000;
+    text-shadow: 1px 1px 1px #fff;
+
+
+}
+
+/* Efecto de presión */
+.tr button:active {
+    font-weight: 700;
+    box-shadow: 1px 1px 6px #0a5502;
+
 
 }
 .comentario{
@@ -53,350 +351,7 @@ body{
     animation: animacion 2s ease-in-out infinite;
     word-wrap: break-word;
 }
-
 .comentario:hover{
     transform: scale(1.05);
     color: #000000;
-}
-
-h1{
-    word-wrap:break-word;
-    color: #666;
-    font-size: 350%;
-    text-align: center;
-    text-shadow: 1px 1px 1px white;
-
-}
-.titulo{
-    word-wrap: break-word;
-    min-width: 250px;
-}
-
-
-
-h2,h3{
-    margin: 10px;
-    font-size: 3.3vw;
-    padding: 6px;
-    text-shadow: 2px 2px 3px #000000;
-}
-.cuerpo,.cuerpo2{
-    background: linear-gradient(to top, transparent 30%, #000);
-    color: aliceblue;
-    border: solid 3px white;
-    border-radius: 10px;
-    margin: auto;
-    padding: 20px;
-    display: block;
-    margin: 0 auto;
-    width: 64svw;
-    text-shadow: 2px 2px 3px #000000;
-    background-color: #233a;
-    transition:transform 0.5s ease;
-    margin-bottom: 20px;
-    min-width: 250px;
-    word-wrap: break-word;
-    padding-bottom:  1px;
-    padding-left: 50px;
-    padding-right: 50px;
-
-}
-
-.cuerpo2{
-    margin: 15px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 12px;
-    margin-bottom: 20px;
-    width: 64vw;
-    min-width: 250px;
-    text-shadow: 2px 2px 3px #000000;
-    background-color: #233a;
-
-
-}
-
-.cuerpo2:hover{
-    transform: scale(1.05);
-}
-
-.cuerpo:hover{
-    transform: scale(1.05);
-}
-
-.intro{
-    text-align: center;
-    margin: 10px;
-    background-color: transparent #666;
-
-    border-radius:  0 10px 10px 0;
-    width: 400px;
-    height: 400px;
-    border: 1px solid #ddd;
-    
-
-}
-
-.buscador{
-    width: 50vw;
-    padding: 1% 8px;
-    border: none;
-    border: 1px solid #666;
-    box-shadow: 0px 0px 15px #0003;
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
-    min-width: 200px;
-    
-}
-.busca{
-    min-width: 3px;
-}
-.fot{
-    width: 36%;
-    height: 20%;
-    border-radius: 2px;
-    margin: 12px;
-    margin-top: 1%;
-    box-shadow: 1px 2px 3px #131212;
-    transition:  0.9s ease;
-
-}
-
-.fot:hover{
-    transform: scale(1.05);
-    box-shadow: 1px 1px 20px #021d07;
-}
-
-.formatocuerpo{
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-p{
-    text-align: justify;
-    width: 80%;
-    font-size: 1.5vw;
-    text-shadow: 2px 2px 3px #000000;
-    line-height: 1.2;
-    margin-left: 12%;
-    word-wrap: break-word;
-}
-
-.lista{
-    display: flex;
-    justify-content: space-between;
-    text-shadow: 2px 2px 3px #000000;
-
-}
-
-
-
-input{
-    margin:-30px;
-    margin-left: 4px;
-    border-radius: 10px;
-    padding: 1% 10px;
-    border: none ;
-    width: 80%;
-    font-size: 90%;
-}
-
-button{
-    padding: 13px 8px;
-    border-radius: 10px;
-}
-
-footer{
-
-    border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-    border:1px solid #ddd;
-    margin: 10px;
-    text-shadow: 2px 2px 3px #000000;
-    text-transform: capitalize;
-    display: block;
-    margin: 0;
-    margin-top: 12px;
-    background-color: #233a;
-    min-width: 250px;
-    margin-bottom: -18px;
-    margin-left: -15px;
-    margin-right: 10px;
-    width: 100vw;
-    height: 40;
-    padding-top:1%;
-    word-wrap: break-word;
-     font-size: clamp(1rem, 2vw, 2rem);
-
-}
-
-button{
-    color: aliceblue;
-    background-color: #000a;
-    box-shadow: 2px 2px 3px #000000;
-    text-shadow: 2px 2px 3px #000000;
-    font-size: 20px;
-    margin: 10%;
-    word-wrap: break-word;
-}
-button{
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 2%;
-    width: 50vw;
-    transition:transform 0.3s ease;
-    word-wrap: break-word;
-
-}
-
-button:hover{
-    transform: scale(1.02);
-    background: #040a;
-}
-.proyectos{
-    display: block;
-    word-wrap: break-word;
-    margin: 0 auto;
-    text-align: center;
-    width: 40vw;
-    margin-bottom: 50px; 
-    margin-top: 35px;
-    word-wrap: break-word;
-    border-radius: 2px;
-    box-shadow: 1px 1px 2px #ffffff;
-    background-color: rgba(0, 0, 0, 0.667);
-    padding: 10px;
-    padding:0;
-    border: 2px solid rgb(66, 67, 116);
-    transition:transform 0.3s ease;
-    min-width: 170px;
-
-
-}
-
-.imgf{
-    background-color: #112a;
-    margin-left: 14px;
-    border-radius: 2px;
-    margin-right: 12px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-
-}
-.imgp{
-    border-radius: 2px;
-    box-shadow: 1px 1px  #000000;
-    width: 20vw;
-    height: 12vw;
-    
-}
-.letras{
-    text-align: center;
-}
-p{
-    text-shadow: 1px 1px #000000;
-    letter-spacing: 1px;
-}
-
-.proyectos:hover{
-    transform: scale(1.1);
-    box-shadow: 2px 1px 5px rgba(141, 136, 211, 0.667);
-
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-
-a:hover{
-    color: #095828;
-    font-size: 110%;
-}
-.gm{
-    font-size: 120%;
-    word-wrap: break-word;
-    width: 70vw;
-    min-width: 200px;
-    background-color: #002a;
-    margin-left: -3vw;
-}
-.verCodigo{
-    width: 15vw;
-    min-width: 105px;
-    font-size: 100%;
-    padding: 10px;
-    margin-top: 10px;
-}
-.hab,.hab1,.hab2,.hab3,.hab4{
-    width: 30vw;
-    border-radius: 1px;
-
-}
-
-.hab1:hover{
-    background-color: rgba(55, 55, 58, 0.667);
-    color: #df8208;
-}
-.hab:hover{
-    background-color: rgba(55, 55, 58, 0.667);
-    color: #ffeb39;
-}
-
-.hab2:hover{
-    background-color: rgba(55, 55, 58, 0.667);
-    color: #0129ac;
-}
-
-.hab3:hover{
-    background-color: rgba(55, 55, 58, 0.667);
-    color: #ac1b01;
-}
-
-.hab4:hover{
-    background-color: rgba(55, 55, 58, 0.667);
-    color: #006319;
-}
-
-.lista{
-    padding-bottom: 12px;
-}
-
-
-.busca{
-    width: 6vw;
-    background-color:#ddd;
-    border:none;
-    box-shadow: none;
-    padding: 0;
-    margin: 0;
-    padding: 12px;
-    margin-right: 12px;
-}
-
-.busca:hover{
-    background-color: transparent;
-    filter:drop-shadow(0 0 4px #06087e)
-}
-.buscador{
-    background-color:#ddd;
-    padding: 0;
-    width: 40vw;
-
-}
-
-.posi{
-    display: flex;
-    justify-content: space-between;
-}
-
-.bu{
-    width: 32vw;
-    padding: 0;
-    margin: 6px;
 }

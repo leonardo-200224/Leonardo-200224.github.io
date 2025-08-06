@@ -1,19 +1,10 @@
-function buscar() {
-  const texto = document.getElementById("buscador").value.toLowerCase();
+ const bMore= document.querySelector('#bMore');
+      bMore.addEventListener('click',e=>{
+        links.classList.toggle('collapsed');
 
-  if (texto.includes("sobre")) {
-    location.href = "#sobremi";
-  } else if (texto.includes("habilidades")) {
-    location.href = "#habilidades";
-  } else if (texto.includes("proyectos")) {
-    location.href = "#proyectos";
-  } else if (texto.includes("contacto")) {
-    location.href = "#contacto";
-  } else {
-    alert("No se encontró esa sección");
-  }
-}
-function copiarCorreo() {
+      })
+
+      function copiarCorreo() {
   const correo = "ayalaperezleonardo24@gmail.com";
 
   navigator.clipboard.writeText(correo)
