@@ -29,9 +29,11 @@ body {
     background-color: #ededed;
 }
 
-
-.collapsed {
+.links{
     display: none;
+}
+.collapsed {
+    display: block;
     
 }
 
