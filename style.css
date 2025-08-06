@@ -222,7 +222,6 @@ a {
     margin-bottom: 0px;
     margin-top: 80px;
     margin-bottom: -58px;
-
     
 }
 
@@ -231,7 +230,6 @@ a {
     background-color: #ddd;
     margin: 20px;
     border-radius: 5px;
-    
 }
 
 h1 {
@@ -356,7 +354,7 @@ footer {
     z-index: 1000;
     transition:transform 0.3s ease;
     animation: animacion 2s ease-in-out infinite;
-    word-wrap: break-word;
+    word-wrap: break-word; 
 }
 .comentario:hover{
     transform: scale(1.05);
