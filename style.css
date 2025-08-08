@@ -4,7 +4,7 @@
     font-family: 'Courier New', Courier, monospace;
     
 }
-.fondo{
+/* .fondo{
     background-image: url('imagen/fondo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,14 +19,14 @@
 
     
 
-}
+} */
 
 body {
     
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
     margin: 0px;
-    background-color: #ededed;
+    background-color: #1e1e2f;
 }
 
 .links{
@@ -86,7 +86,7 @@ nav a {
 
 nav a:hover {
     color: black;
-    background-color: #00c3ff;
+    background-color: #00bcd4;
 }
 
 nav .desktop {
@@ -156,18 +156,18 @@ nav .desktop .secondary.mini {
     flex-wrap: wrap;
 }
 
+
 .in-flex {
     flex: 1;
     min-width: 250px;
-    max-width: 500px;
-    max-height: 56rem;
-    padding-bottom: 610px;
+    max-width: 950px;
+    padding-bottom: 10px;
     margin-top: 62px;
-    border-radius: 5px;
-
-    
-
+    border-radius: 0px;
 }
+
+
+
 
 p {
     width: 100%;
@@ -179,10 +179,18 @@ p {
 }
 
 .fr {
-    max-width: 750px;
+    max-width: 550px;
     border-radius: 5px;
+  
+    
 
 
+
+}
+.tr{
+         height: 29rem; 
+         margin: 0;
+         padding: 0;
 
 }
 
@@ -190,10 +198,14 @@ p {
     color: #DDD;
     font-weight: 700;
     margin: 20px;
-    max-width: 46%;
+    max-width: 100%;
     height: auto;
     display: block;
     border-radius: 5px;
+    min-width: 130px;
+ 
+    
+    
 
 
 }
@@ -201,7 +213,7 @@ p {
 .verCodigo {
     color: #DDD;
     font-weight: 700;
-    border: 2px solid #cdcdcd;
+    border: 2px solid #00bcd4;
     background-color: #424141;
     width: 50%;
     box-shadow: 1px 1px 2px #000000;
@@ -215,22 +227,27 @@ a {
 }
 
 .in-flex:first-child {
+    color: #ddd;
     flex: 2;
     padding: 25px;
-    background-color: #ddd;
+    background-color: #000a;
     margin: 20px;
     margin-bottom: 0px;
     margin-top: 80px;
     margin-bottom: -58px;
-    
+    border-radius: 5px;
 }
 
 .in-flex div {
     padding: 25px;
-    background-color: #ddd;
-    margin: 20px;
+    background-color: transparent;
+    margin-right: 30px;
     border-radius: 5px;
+    color: #ddd;
+    
+
 }
+@media 
 
 h1 {
     font-size: 2.2rem;
@@ -239,13 +256,17 @@ h1 {
 }
 
 .fot {
-    margin-top: 30px;
-    max-width: 70%;
+    margin-top: 0px;
+    max-width: 50%;
     height: auto;
     display: block;
     box-shadow: 1px 1px 7px #cbcbcb;
     border-radius: 4px;
     transition: 0.9s ease;
+}
+.foto{
+    margin: 0px;
+    padding:0px;
 }
 
 .fot:hover {
@@ -256,9 +277,10 @@ h1 {
 }
 
 .imgp {
-    max-width: 40%;
+    max-width: 1%;
     height: auto;
     display: block;
+    min-width: 250px;
 }
 
 .b {
@@ -298,12 +320,12 @@ button:hover {
     height: auto;
     display: block;
     transform: scale(1.02);
-    background: #040a;
+    background: #00bcd4;
 }
 
 /* pie de pagina */
 footer {
-    background-color: #252525;
+    background-color: #000;
     color: white;
     text-align: center;
     margin-top: 6rem;
@@ -314,8 +336,8 @@ footer {
 
 .tr button {
     border: 7px solid #000000;
-    border-bottom: 6px solid #fff;
-    border-right: 6px solid #fff;
+    border-bottom: 6px solid #00bcd4;
+    border-right: 6px solid #00bcd4;
     cursor: pointer;
     transition: 0.3s ease-in, 0.3s ease-in;
 
@@ -341,11 +363,11 @@ footer {
 
 }
 .comentario{
-    border: 2px solid #fcf9f9;
+    border: 2px solid #00bcd4;
     position: fixed;
     bottom:20px;
     right: 20px;
-    background: rgb(92, 89, 89);
+    background: rgb(7, 7, 7);
     color: #ffffff;
     padding: 15px 20px;
     border-radius: 20px;
@@ -357,6 +379,36 @@ footer {
     word-wrap: break-word; 
 }
 .comentario:hover{
+    background-color: #00bcd4;
     transform: scale(1.05);
     color: #000000;
 }
+.fot{
+    margin: 12px;
+    float: left;
+    min-width: 250px;
+}
+.y{
+    min-width: 250px;
+    max-width: 10000px;
+    padding-bottom: 210px;
+    margin-top: 62px;
+    border-radius: 5px;
+     color: #ddd;
+    padding: 25px;
+    background-color: #000a;
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+    margin-bottom: -58px;
+}
+.imgp{
+    margin: 12px;
+    float: left;
+
+}
+.b{
+    width: 39rem;
+    margin-top: 10%;
+}
+
