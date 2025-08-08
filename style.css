@@ -462,14 +462,4 @@ footer {
     min-width: 250px;
 }
 
-.contenido-proyecto h3 {
-    color: #f0f6fc;
-    margin-bottom: 10px;
-}
 
-.contenido-proyecto p {
-    color: #c9d1d9;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: justify;
-}
